@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane fx:id="root"
+        xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.NumberMemory"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #2b87d1;">
+
+    <VBox layoutX="1" layoutY="1">
+        <ImageView onMouseClicked="#home">
+            <Image url="/resource/HomeIcon.png"
+                   requestedHeight="90.0"
+                   requestedWidth="100.0"/>
+        </ImageView>
+    </VBox>
+    <children>
+        <VBox spacing="20" alignment="CENTER" prefWidth="100" prefHeight="250" layoutX="350" layoutY="450">
+            <children>
+                <ProgressBar fx:id="progressBar" visible="false" prefWidth="320"/>
+            </children>
+        </VBox>
+    </children>
+    <VBox layoutX="350" layoutY="150" fx:id="LevelInformationVBox" visible="false">
+        <Label fx:id="numberInfoLabel" style="-fx-font-size: 35; -fx-font-color: white;" text="Number"/>
+        <Label fx:id="currentNumberLabel" style="-fx-font-size: 35; -fx-font-color: white;"/>
+        <Label fx:id="yourAnswerLabel" text="Your answer" style="-fx-font-size: 35; -fx-font-color: white;"/>
+        <Label fx:id="currentYourAnswer" style="-fx-font-size: 35; -fx-font-color: white;"/>
+        <Label fx:id="currentLevel" style="-fx-font-size: 35; -fx-font-color: white;"/>
+    </VBox>
+    <VBox layoutX="350" layoutY="150">
+        <Button fx:id="buttonSubmit" text="Submit" visible="false" onAction="#handleSubmitAction"/>
+    </VBox>
+    <VBox layoutX="400" layoutY="500">
+        <Button fx:id="buttonStart" text="Start" onAction="#handleStartAction"/>
+    </VBox>
+
+    <VBox layoutX="450" layoutY="500">
+        <Button fx:id="buttonNext" text="Next" visible="false" onAction="#handleNextAction"/>
+    </VBox>
+    <VBox layoutX="400" layoutY="600">
+        <Button fx:id="buttonTryAgain" text="Try again" visible="false" onAction="#handleTryAgainAction"/>
+    </VBox>
+    <VBox layoutX="130" layoutY="200">
+        <ImageView fx:id="mainImage">
+            <Image url="/resource/NumberTitleImage.PNG"
+                   requestedHeight="236.0"
+                   requestedWidth="640.0">
+            </Image>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="250" layoutY="200">
+        <ImageView fx:id="secondImage" visible="false">
+            <Image url="/resource/NumberWhatNumber.PNG"/>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="380" layoutY="450">
+        <Label fx:id="numberLabel" visible="false" style="-fx-font-size: 35;"/>
+    </VBox>
+    <VBox layoutX="350" layoutY= "300">
+        <TextField fx:id="numberInput" visible="false"/>
+    </VBox>
+</Pane>

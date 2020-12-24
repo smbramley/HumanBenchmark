@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="main.backend.Home"
+          prefHeight="670.0" prefWidth="800.0"
+          alignment="CENTER"
+          style="-fx-background-color: #e1e1e1;">
+
+    <ImageView GridPane.rowIndex="0" GridPane.columnIndex="1">
+        <Image url="/resource/Title.PNG"
+               requestedHeight="145.0"
+               requestedWidth="250.0">
+        </Image>
+    </ImageView>
+    <ImageView GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <Image url="/resource/Side.png"
+               requestedHeight="130.0"
+               requestedWidth="250.0">
+        </Image>
+    </ImageView>
+    <ImageView GridPane.rowIndex="0" GridPane.columnIndex="2">
+        <Image url="/resource/Side.png"
+               requestedHeight="130.0"
+               requestedWidth="250.0">
+        </Image>
+    </ImageView>
+    <ImageView fx:id="reactionIV" onMouseExited="#reactionTimeExit" onMouseEntered="#reactionTimeHover"
+               onMouseClicked="#reactionTimeClicked" GridPane.rowIndex="1"
+               GridPane.columnIndex="0">
+        <Image url="/resource/FullReactionTime.PNG"
+               requestedHeight="260.0"
+               requestedWidth="280.0">
+        </Image>
+    </ImageView>
+    <ImageView fx:id="aimIV" onMouseExited="#aimTrainerExit" onMouseEntered="#aimTrainerHover"
+               onMouseClicked="#aimTrainerClicked" GridPane.rowIndex="1"
+               GridPane.columnIndex="1">
+        <Image url="/resource/FullAimTrainer.PNG"
+               requestedHeight="260.0"
+               requestedWidth="280.0">
+        </Image>
+    </ImageView>
+    <ImageView fx:id="chimpIV" onMouseExited="#chimpTestExit" onMouseEntered="#chimpTestHover"
+               onMouseClicked="#chimpTestClicked" GridPane.rowIndex="1"
+               GridPane.columnIndex="2">
+        <Image url="/resource/FullChimpTest.PNG"
+               requestedHeight="260.0"
+               requestedWidth="280.0">
+        </Image>
+    </ImageView>
+    <ImageView fx:id="numberIV" onMouseExited="#numberMemoryExit" onMouseEntered="#numberMemoryHover"
+               onMouseClicked="#numberMemoryClicked" GridPane.rowIndex="3"
+               GridPane.columnIndex="0">
+        <Image url="/resource/FullNumberMemory.PNG"
+               requestedHeight="260.0"
+               requestedWidth="280.0">
+        </Image>
+    </ImageView>
+    <ImageView fx:id="visualIV" onMouseExited="#visualMemoryExit" onMouseEntered="#visualMemoryHover"
+               onMouseClicked="#visualMemoryClicked" GridPane.rowIndex="2"
+               GridPane.columnIndex="0">
+        <Image url="/resource/FullVisualMemory.PNG"
+               requestedHeight="260.0"
+               requestedWidth="280.0">
+        </Image>
+    </ImageView>
+    <ImageView fx:id="hearingIV" onMouseExited="#hearingExit" onMouseEntered="#hearingHover"
+               onMouseClicked="#hearingClicked" GridPane.rowIndex="2"
+               GridPane.columnIndex="1">
+        <Image url="/resource/FullHearing.PNG"
+               requestedHeight="260.0"
+               requestedWidth="280.0">
+        </Image>
+    </ImageView>
+    <ImageView fx:id="typingIV" onMouseExited="#typingExit" onMouseEntered="#typingHover"
+               onMouseClicked="#typingClicked" GridPane.rowIndex="2"
+               GridPane.columnIndex="2">
+        <Image url="/resource/FullTyping.PNG"
+               requestedHeight="260.0"
+               requestedWidth="280.0">
+        </Image>
+    </ImageView>
+    <ImageView fx:id="verbalIV" onMouseExited="#verbalMemoryExit" onMouseEntered="#verbalMemoryHover"
+               onMouseClicked="#verbalMemoryClicked" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <Image url="/resource/FullVerbalMemory.PNG"
+               requestedHeight="260.0"
+               requestedWidth="280.0">
+        </Image>
+    </ImageView>
+</GridPane>

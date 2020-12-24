@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane fx:id="root"
+        xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.VerbalMemory"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #2b87d1;">
+
+    <VBox layoutX="1" layoutY="1">
+        <ImageView onMouseClicked="#home">
+            <Image url="/resource/HomeIcon.png"
+                   requestedHeight="90.0"
+                   requestedWidth="100.0">
+            </Image>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="400" layoutY="700">
+        <Button fx:id="startButton" text="Start" onMouseClicked="#startClicked"/>
+    </VBox>
+    <VBox layoutX="450" layoutY="550">
+        <Button fx:id="seenButton" visible="false" text="Seen" onMouseClicked="#seenClicked"/>
+    </VBox>
+    <VBox layoutX="350" layoutY="550">
+        <Button fx:id="newButton" visible="false" text="New" onMouseClicked="#newClicked"/>
+    </VBox>
+    <VBox layoutX="400" layoutY="600">
+        <Button fx:id="restartButton" text="Restart" onMouseClicked="#restartClicked" visible="false"/>
+    </VBox>
+    <VBox layoutX="350" layoutY="480" alignment="CENTER">
+        <Label alignment="CENTER" style="-fx-font-size: 35" fx:id="wordDisplay" visible="false"/>
+    </VBox>
+    <VBox layoutX="300" layoutY="400">
+        <Label style="-fx-font-size: 35" fx:id="livesDisplay" visible="false"/>
+    </VBox>
+    <VBox layoutX="430" layoutY="400">
+        <Label style="-fx-font-size: 35" fx:id="scoreDisplay" visible="false"/>
+    </VBox>
+    <VBox layoutX="100" layoutY="150">
+        <ImageView fx:id="mainImage">
+            <Image url="/resource/VerbalTestTitle.PNG"/>
+        </ImageView>
+    </VBox>
+</Pane>

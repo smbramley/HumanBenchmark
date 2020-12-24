@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane fx:id="root"
+        xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.AimTrainer"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #2b87d1;">
+
+    <VBox layoutX="1" layoutY="1">
+        <ImageView onMouseClicked="#home">
+            <Image url="/resource/HomeIcon.png"
+                   requestedHeight="90.0"
+                   requestedWidth="100.0">
+            </Image>
+        </ImageView>
+    </VBox>
+    <VBox fx:id="aimTitle" layoutX="223" layoutY="295">
+        <ImageView >
+            <Image url="/resource/AimTitle.PNG"/>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="300" layoutY="20">
+        <Label fx:id="totalLeft" style="-fx-font-size: 30;" text="Total Targets Left: 30">
+        </Label>
+    </VBox>
+    <VBox layoutX="280" layoutY="230">
+        <Label fx:id="aimTime" style="-fx-font-size: 30;" text="Click the Target to start!" visible="false">
+        </Label>
+    </VBox>
+    <VBox fx:id="buttonImage" layoutX="400" layoutY="400">
+        <ImageView onMouseClicked="#onClickAimTrainer">
+            <Image url="/resource/AimImageTransparent.png"/>
+        </ImageView>
+    </VBox>
+</Pane>

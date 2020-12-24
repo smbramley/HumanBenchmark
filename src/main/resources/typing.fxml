@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.TextFlow?>
+<Pane fx:id="root"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.Typing"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #2b87d1;">
+
+    <VBox layoutX="1" layoutY="1">
+        <ImageView onMouseClicked="#home">
+            <Image url="/resource/HomeIcon.png"
+                   requestedHeight="90.0"
+                   requestedWidth="100.0">
+            </Image>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="400" layoutY="300">
+        <Label fx:id="wpmLabel" style="-fx-font-size: 35;"/>
+    </VBox>
+    <VBox fx:id="titleImage" layoutY="100">
+        <ImageView>
+            <Image url="/resource/TypingTitle.PNG"/>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="200" layoutY="300">
+        <TextArea fx:id="textArea" onKeyTyped="#checkTextChanged"/>
+    </VBox>
+    <VBox layoutX="208" layoutY="305">
+        <TextFlow fx:id="textFlow"/>
+    </VBox>
+    <VBox layoutX="408" layoutY="505">
+        <Button fx:id="restartButton" text="Restart" onMouseClicked="#restartTyping" visible="false"/>
+    </VBox>
+    <VBox fx:id="bottomImage" layoutX="200" layoutY="600">
+        <ImageView>
+            <Image url="/resource/TypingImageBottom.PNG"/>
+        </ImageView>
+    </VBox>
+</Pane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane fx:id="root"
+        xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.ChimpTest"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #2b87d1;">
+
+    <VBox layoutX="1" layoutY="1">
+        <ImageView onMouseClicked="#home">
+            <Image url="/resource/HomeIcon.png"
+                   requestedHeight="90.0"
+                   requestedWidth="100.0"/>
+        </ImageView>
+    </VBox>
+    <VBox fx:id="numberVBox" layoutX="370" layoutY="520">
+        <Button fx:id="startChimpTestButton" text="Start Chimp Test" onMouseClicked="#startChimpTest"/>
+    </VBox>
+    <VBox fx:id="nextLevelChimpTestButton" visible="false" layoutX="370" layoutY="520">
+        <Button  text="Continue" onMouseClicked="#nextLevel"/>
+    </VBox>
+    <Pane fx:id="holderPane" layoutX="70" layoutY="400"/>
+    <VBox fx:id="mainImage" layoutX="100" layoutY="200">
+        <ImageView>
+            <Image url="/resource/ChimpTestTitle.PNG"/>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="300" layoutY="100">
+        <Label fx:id="numbers" visible="false" style="-fx-font-size: 50;" text="NUMBERS"/>
+    </VBox>
+    <VBox layoutX="380" layoutY="160">
+        <Label fx:id="displayScore" visible="false" style="-fx-font-size: 70;"/>
+    </VBox>
+    <VBox layoutX="320" layoutY="300">
+        <Label fx:id="strikesLabel" visible="false" style="-fx-font-size: 50;" text="STRIKES"/>
+    </VBox>
+    <VBox layoutX="340" layoutY="360">
+        <Label fx:id="displayStrikes" visible="false" style="-fx-font-size: 50;"/>
+    </VBox>
+</Pane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane fx:id="root"
+        xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.Hearing"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #2b87d1;">
+
+    <VBox layoutX="1" layoutY="1">
+        <ImageView onMouseClicked="#home">
+            <Image url="/resource/HomeIcon.png"
+                   requestedHeight="90.0"
+                   requestedWidth="100.0"/>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="220" layoutY="20">
+        <ImageView>
+            <Image url="/resource/HearingTestTitle.PNG"
+                   requestedHeight="236.0"
+                   requestedWidth="400.0">
+            </Image>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="360" layoutY="300">
+        <Label fx:id="timerLabel" style="-fx-font-size: 35;">
+
+        </Label>
+    </VBox>
+    <VBox layoutX="370" layoutY="420">
+        <Button fx:id="startstop" onMouseClicked="#startHearingTest" text="Start Hearing Test" style="-fx-background-color: yellow;">
+        </Button>
+    </VBox>
+</Pane>

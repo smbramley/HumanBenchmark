@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane fx:id="root"
+        xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.backend.VisualMemory"
+      prefHeight="400.0" prefWidth="600.0"
+      style="-fx-background-color: #2b87d1;">
+
+    <VBox layoutX="1" layoutY="1">
+        <ImageView onMouseClicked="#home">
+            <Image url="/resource/HomeIcon.png"
+                   requestedHeight="90.0"
+                   requestedWidth="100.0">
+            </Image>
+        </ImageView>
+    </VBox>
+    <VBox layoutX="300" layoutY="280">
+        <Label fx:id="Level" visible="false" style="-fx-font-size: 35;"/>
+    </VBox>
+    <VBox layoutX="420" layoutY="280">
+        <Label fx:id="Lives" visible="false" style="-fx-font-size: 35;"/>
+    </VBox>
+    <VBox layoutX="100" layoutY="100">
+        <ImageView fx:id="mainImage">
+            <Image url="/resource/VisualMemoryTitle.PNG"/>
+        </ImageView>
+    </VBox>
+    <GridPane fx:id="gridVisualHolder" layoutX="250" layoutY="450"/>
+    <VBox layoutX="400" layoutY="700">
+        <Button fx:id="startButton" text="Start" onMouseClicked="#startClicked"/>
+    </VBox>
+</Pane>
