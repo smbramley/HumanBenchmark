@@ -1,11 +1,11 @@
-# Project 3 - Human Benchmark
+# Human Benchmark
 ---
 
-## Project 3 Human Benchmark Overview
+## Human Benchmark Overview
 
 **Author: Shane Bramley**
 
-Project 3 is a rebuild of the Human Benchmark application on the Human benchmark website it includes multiple games including:
+A rebuild of the Human Benchmark application on the Human benchmark website it includes multiple games including:
 - **Aim Trainer**   - This game will test the speed of the user by clicking 30 targets as quickly as possible.
 - **Reaction Time** - This game will test the reaction time of the user by changing images then the use clicks as quickly as possible
 - **Chimp Test**    - This game will test the users memory of the numbers locations count 1-n
